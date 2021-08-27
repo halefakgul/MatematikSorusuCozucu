@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -36,28 +37,38 @@
             <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" text="Çıkış" />
           </items>
+               <graphic>
+                  <Icons525View />
+               </graphic>
         </Menu>
         <Menu mnemonicParsing="false" text="Düzenle">
           <items>
-            <MenuItem mnemonicParsing="false" text="Undo" />
-            <MenuItem mnemonicParsing="false" text="Redo" />
+            <MenuItem mnemonicParsing="false" text="Geri Al" />
+            <MenuItem mnemonicParsing="false" text="İleri Al" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Cut" />
-            <MenuItem mnemonicParsing="false" text="Copy" />
-            <MenuItem mnemonicParsing="false" text="Paste" />
-            <MenuItem mnemonicParsing="false" text="Delete" />
+            <MenuItem mnemonicParsing="false" text="Kes" />
+            <MenuItem mnemonicParsing="false" text="Kopyala" />
+            <MenuItem mnemonicParsing="false" text="Yapıştır" />
+            <MenuItem mnemonicParsing="false" text="Sil" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Select All" />
-            <MenuItem mnemonicParsing="false" text="Unselect All" />
+            <MenuItem mnemonicParsing="false" text="Hepsini Seç" />
+            <MenuItem mnemonicParsing="false" text="Seçimleri Kaldır" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Yardım">
           <items>
-            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+            <MenuItem mnemonicParsing="false" text="Hakkında" />
           </items>
         </Menu>
       </menus>
     </MenuBar>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <SplitPane prefHeight="25.0" prefWidth="788.0" />
+            <Button mnemonicParsing="false" text="Temizle" />
+            <Button mnemonicParsing="false" text="Çalıştır" />
+         </children>
+      </HBox>
     <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <items>
         <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
@@ -80,7 +91,6 @@
               <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                      <children>
                         <TextArea maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="137.0" prefWidth="684.0" />
-                        <Button layoutX="605.0" layoutY="44.0" mnemonicParsing="false" text="Button" />
                      </children>
               </AnchorPane>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
