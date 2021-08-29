@@ -8,6 +8,11 @@ tomcat
 # Default excludes
 #
 
+
+# Test .sh script files
+*.sh
+
+
 # Binaries
 *.7z
 *.dmg
